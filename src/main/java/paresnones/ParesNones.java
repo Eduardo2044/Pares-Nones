@@ -1,20 +1,37 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package paresnones;
 
-/**
- *
- * @author eduardo
- */
+import java.util.Random;
+import java.util.Scanner;
+
 public class ParesNones {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        //Creamos el Scanner
+        Scanner teclado = new Scanner(System.in);
+        
+        //Variables
+        int opcion;
+        
+        //Bucle que repita el programa hasta que el usuario decida salir
+        do {
+            //Menu
+            do {
+                System.out.println("¿Quiere jugar contra otro jugador "
+                        + "o contra la maquina?");
+                System.out.println("<----------------------------------------->");
+                System.out.println("1.Otro jugador");
+                System.out.println("2.Máquina");
+                System.out.println("3.Salir");
+
+                opcion = teclado.nextInt();
+
+            } while (opcion < 1 || opcion > 3);
+
+
+        } while (opcion != 3);
+        
     }
     
 }
