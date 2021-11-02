@@ -14,6 +14,8 @@ public class ParesNones {
         //Variables
         int opcion;
         int dedosJ1;
+        int dedosJ2;
+        int aux; // Variable auxiliar para calculos
         String J1;
         String J2;
         
@@ -37,6 +39,7 @@ public class ParesNones {
                 if (opcion == 1) {
                     do {
                         System.out.println("Jugador 1");
+                        teclado.nextLine();
                         //Preguntamos si quiere ser pare o none
                         System.out.println("Elige pare o none: ");
                         J1 = teclado.nextLine();
@@ -53,6 +56,29 @@ public class ParesNones {
 
                     } while (dedosJ1 < 0 || dedosJ1 > 10);
 
+                    do {
+                        System.out.println("Jugador 2");
+                        //Pedimos el numero de dedos del J2 hasta que este en rango
+                        System.out.println("¿Cuántos dedos vas a sacar? ");
+                        dedosJ2 = teclado.nextInt();
+
+                    } while (dedosJ2 < 0 || dedosJ2 > 10);
+                    
+                    //Empezamos a resolver
+                    aux = dedosJ1 + dedosJ2;
+                    if(aux%2==0){
+                        if(J1.equalsIgnoreCase("pare")){
+                            System.out.println("Ha ganado el J1.");
+                        }else{
+                            System.out.println("Ha ganado el J2.");
+                        }
+                    }else{
+                        if(J1.equalsIgnoreCase("pare")){
+                            System.out.println("Ha perdido el J1.");
+                        }else{
+                            System.out.println("Ha perdido el J2.");
+                        }
+                    }
                     
                 } else { //Opcion 2
                     
