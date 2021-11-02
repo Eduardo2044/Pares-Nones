@@ -100,6 +100,13 @@ public class ParesNones {
                         dedosJ1 = teclado.nextInt();
 
                     } while (dedosJ1 < 0 || dedosJ1 > 10);
+                    
+                    System.out.println("La máquina elige un número de dedos");
+                    //Generamos un numero aleatorio
+                    Random aleatorio = new Random();
+                    dedosJ2 = aleatorio.nextInt(10);
+                    System.out.println("La máquina ha elegido: " + dedosJ2 + " dedos.");
+                    
                 }
               
             }
