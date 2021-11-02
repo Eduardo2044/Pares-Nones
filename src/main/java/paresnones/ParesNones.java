@@ -18,7 +18,7 @@ public class ParesNones {
         int aux; // Variable auxiliar para calculos
         String J1;
         String J2;
-        
+
         do {
             //Menu
             do {
@@ -71,10 +71,10 @@ public class ParesNones {
                             System.out.println("Ha ganado el J2.");
                         }
                     } else {
-                        if (J1.equalsIgnoreCase("pare")) {
-                            System.out.println("Ha perdido el J1.");
+                        if (J1.equalsIgnoreCase("none")) {
+                            System.out.println("Ha ganado el J1.");
                         } else {
-                            System.out.println("Ha perdido el J2.");
+                            System.out.println("Ha ganado el J2.");
                         }
                     }
                     break;
@@ -113,10 +113,10 @@ public class ParesNones {
                             System.out.println("Ha ganado la máquina.");
                         }
                     } else {
-                        if (J1.equalsIgnoreCase("pare")) {
-                            System.out.println("Ha perdido el J1.");
+                        if (J1.equalsIgnoreCase("none")) {
+                            System.out.println("Ha ganado el J1.");
                         } else {
-                            System.out.println("Ha perdido la máquina.");
+                            System.out.println("Ha ganado la máquina.");
                         }
                     }
                     break;
