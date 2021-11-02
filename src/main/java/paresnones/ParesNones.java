@@ -14,6 +14,8 @@ public class ParesNones {
         //Variables
         int opcion;
         int dedosJ1;
+        String J1;
+        String J2;
         
         //Bucle que repita el programa hasta que el usuario decida salir
         do {
@@ -34,6 +36,17 @@ public class ParesNones {
                 //Opcion 1
                 if (opcion == 1) {
                     do {
+                        System.out.println("Jugador 1");
+                        //Preguntamos si quiere ser pare o none
+                        System.out.println("Elige pare o none: ");
+                        J1 = teclado.nextLine();
+                        if(J1.equalsIgnoreCase("pare")){
+                            J1 = "pare";
+                            J2 = "none";
+                        }else{
+                            J1 = "none";
+                            J2 = "pare";
+                        }
                         //Pedimos el numero de dedos del J1 hasta que este en rango
                         System.out.println("¿Cuántos dedos vas a sacar? ");
                         dedosJ1 = teclado.nextInt();
