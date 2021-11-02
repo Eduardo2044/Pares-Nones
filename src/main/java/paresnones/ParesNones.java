@@ -82,6 +82,24 @@ public class ParesNones {
                     
                 } else { //Opcion 2
                     
+                    do {
+                        System.out.println("Jugador 1");
+                        teclado.nextLine();
+                        //Preguntamos si quiere ser pare o none
+                        System.out.println("Elige pare o none: ");
+                        J1 = teclado.nextLine();
+                        if(J1.equalsIgnoreCase("pare")){
+                            J1 = "pare";
+                            J2 = "none";
+                        }else{
+                            J1 = "none";
+                            J2 = "pare";
+                        }
+                        //Pedimos el numero de dedos del J1 hasta que este en rango
+                        System.out.println("¿Cuántos dedos vas a sacar? ");
+                        dedosJ1 = teclado.nextInt();
+
+                    } while (dedosJ1 < 0 || dedosJ1 > 10);
                 }
               
             }
