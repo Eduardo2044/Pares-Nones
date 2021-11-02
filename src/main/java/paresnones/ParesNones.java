@@ -107,6 +107,21 @@ public class ParesNones {
                     dedosJ2 = aleatorio.nextInt(10);
                     System.out.println("La máquina ha elegido: " + dedosJ2 + " dedos.");
                     
+                    //Empezamos a resolver
+                    aux = dedosJ1 + dedosJ2;
+                    if(aux%2==0){
+                        if(J1.equalsIgnoreCase("pare")){
+                            System.out.println("Ha ganado el J1.");
+                        }else{
+                            System.out.println("Ha ganado la máquina.");
+                        }
+                    }else{
+                        if(J1.equalsIgnoreCase("pare")){
+                            System.out.println("Ha perdido el J1.");
+                        }else{
+                            System.out.println("Ha perdido la máquina.");
+                        }
+                    }
                 }
               
             }
