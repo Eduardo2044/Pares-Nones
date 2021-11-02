@@ -13,6 +13,7 @@ public class ParesNones {
         
         //Variables
         int opcion;
+        int dedosJ1;
         
         //Bucle que repita el programa hasta que el usuario decida salir
         do {
@@ -29,6 +30,22 @@ public class ParesNones {
 
             } while (opcion < 1 || opcion > 3);
 
+            if (opcion != 3) {
+                //Opcion 1
+                if (opcion == 1) {
+                    do {
+                        //Pedimos el numero de dedos del J1 hasta que este en rango
+                        System.out.println("¿Cuántos dedos vas a sacar? ");
+                        dedosJ1 = teclado.nextInt();
+
+                    } while (dedosJ1 < 0 || dedosJ1 > 10);
+
+                    
+                } else { //Opcion 2
+                    
+                }
+              
+            }
 
         } while (opcion != 3);
         
